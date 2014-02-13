@@ -12,6 +12,7 @@ using JetBrains.ReSharper.Refactorings.Workflow;
 using JetBrains.TextControl;
 using JetBrains.Util;
 using ReSynonym.Workflow;
+using DataConstants = JetBrains.ProjectModel.DataContext.DataConstants;
 
 namespace ReSynonym
 {
@@ -36,7 +37,7 @@ namespace ReSynonym
               RefactoringActionUtil.ExecuteRefactoring(
                           JetBrains.ActionManagement.ShellComponentsEx.ActionManager(Shell.Instance.Components)
                             .DataContexts.CreateOnSelection(lifetime, DataRules.AddRule("DoTypoRenameWorkflow",
-                            JetBrains.ProjectModel.DataContext.DataConstants.SOLUTION, solution)), inlineSynonymWorkflow));
+                            DataConstants.SOLUTION, solution)), inlineSynonymWorkflow));
             return null;
         }
 

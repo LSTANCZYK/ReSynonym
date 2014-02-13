@@ -48,10 +48,10 @@ namespace ReSynonym.Workflow
         public override bool Equals(object obj) { return inlineRenameWorkflow.Equals(obj); }
         public override string ToString() { return inlineRenameWorkflow.ToString(); }
 
-        public override bool HasUI { get { return inlineRenameWorkflow.HasUI; } }
         public override string Title { get { return inlineRenameWorkflow.Title; } }
+        public override string ActionId { get { return inlineRenameWorkflow.ActionId; } }
+        public override bool HasUI { get { return inlineRenameWorkflow.HasUI; } }
         public override IconId Icon { get {  return inlineRenameWorkflow.Icon; } }
-        public override string ActionId { get {  return inlineRenameWorkflow.ActionId; } }
         public override RefactoringActionGroup ActionGroup { get {  return inlineRenameWorkflow.ActionGroup; } }
         public override string HelpKeyword { get {  return inlineRenameWorkflow.HelpKeyword; } }
 
