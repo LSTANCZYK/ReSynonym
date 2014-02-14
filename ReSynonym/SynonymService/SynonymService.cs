@@ -13,7 +13,6 @@ namespace ReSynonym.SynonymService
             try
             {
                 List<string> synonymsOfQuery;
-
                 if (SearchThesaurusForSynonyms(query, out synonymsOfQuery)) 
                     return synonymsOfQuery;
             }
@@ -34,10 +33,7 @@ namespace ReSynonym.SynonymService
             {
                 while (!reader.EndOfStream)
                 {
-                    var line = reader.ReadLine();
-
-                    if (!LocatedQueryAtBeginningOfLine(query, line)) continue;
-
+                    if (!LocatedQueryAtBeginningOfLine(query, reader.ReadLine())) continue;
                     synonymsOfQuery = SynonymsOfQuery(reader.ReadLine()); return true;
                 }
             }
@@ -46,21 +42,21 @@ namespace ReSynonym.SynonymService
             return false;
         }
 
-        private static Stream LocateEmbeddedThesaurus()
+        private Stream LocateEmbeddedThesaurus()
         {
             var assembly = Assembly.GetExecutingAssembly();
             var thesaurusStream = assembly.GetManifestResourceStream("ReSynonym.Thesaurus.th_en_US_new.dat");
             return thesaurusStream;
         }
 
-        public bool LocatedQueryAtBeginningOfLine(string query, String line)
+        private bool LocatedQueryAtBeginningOfLine(string query, String line)
         {
             return !query.Where((letter, iCount) => letter != line[iCount]).Any();
         }
 
-        public List<string> SynonymsOfQuery(string queryLine)
+        private List<string> SynonymsOfQuery(string lineAfterQueryLocation)
         {
-            return queryLine.Split('|').ToList();
+            return lineAfterQueryLocation.Split('|').ToList();
         }
     }
 }

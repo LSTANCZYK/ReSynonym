@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ReSynonymTests")]
+[assembly: AssemblyTitle("Resynonym.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("ReSynonymTests")]
+[assembly: AssemblyProduct("Resynonym.Tests")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b12bd802-dbc1-4a58-bdd6-e0689b2c45c5")]
+[assembly: Guid("9e59cbcb-e24c-4e86-a0d1-62379f24ffae")]
 
 // Version information for an assembly consists of the following four values:
 //

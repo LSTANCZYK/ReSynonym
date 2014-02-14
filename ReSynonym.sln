@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSynonym", "ReSynonym\ReSynonym.csproj", "{B59BCB0D-8A60-4B62-8990-EF101CC89BA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSynonymTests", "ReSynonymTests\ReSynonymTests.csproj", "{6EDAEA7D-018E-4A76-89CA-7CDDE5F083B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resynonym.Tests", "Resynonym.Tests\Resynonym.Tests.csproj", "{3AC0E78E-A835-42EF-A510-3D312E64698B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{B59BCB0D-8A60-4B62-8990-EF101CC89BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B59BCB0D-8A60-4B62-8990-EF101CC89BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B59BCB0D-8A60-4B62-8990-EF101CC89BA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EDAEA7D-018E-4A76-89CA-7CDDE5F083B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EDAEA7D-018E-4A76-89CA-7CDDE5F083B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EDAEA7D-018E-4A76-89CA-7CDDE5F083B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EDAEA7D-018E-4A76-89CA-7CDDE5F083B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC0E78E-A835-42EF-A510-3D312E64698B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC0E78E-A835-42EF-A510-3D312E64698B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC0E78E-A835-42EF-A510-3D312E64698B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC0E78E-A835-42EF-A510-3D312E64698B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

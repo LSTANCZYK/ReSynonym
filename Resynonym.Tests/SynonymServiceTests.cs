@@ -1,12 +1,11 @@
-﻿using ReSynonym.SynonymService;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
+using ReSynonym.SynonymService;
 
-namespace ReSynonymTests
+namespace Resynonym.Tests
 {
-    [TestClass]
-    public class SynonymServiceTest
+    public class SynonymServiceTests
     {
-        [TestMethod]
+        [Test]
         public void Ensure_Can_Locate_Synonyms_From_Inside_Thesaurus()
         {
             var synonymService = new SynonymService();
